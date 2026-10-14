@@ -4,9 +4,9 @@ description: p3 agent style for concise, detailed responses, deliberate delegati
 disable-model-invocation: true
 ---
 
+# P3 mode
 
 Read `~/.agents/p3-models.md` first. A project `p3-models.md` is an optional override. Each project role line replaces the same global role. Other roles keep their global values. Resolve effort through the catalog option ID, such as `reasoningEffort`, `effort`, or `variant`. Omit effort when the model exposes no such option.
-# P3 mode
 
 Skills are invoked by name (`/p3-mode`). There are no mode toggles.
 
