@@ -73,3 +73,13 @@ The active file is `~/.agents/p3-models.md`. All four distinct entries replied
 with `pong`. Codex uses `reasoningEffort`, Claude uses `effort`, and DeepSeek
 uses `variant`, all at `high`. MiMo has no effort option and omits it.
 The Gemini seat waits for the user's OpenCode privacy approval.
+
+## 9. Old configuration cleanup
+
+The project `p3-models.md` files in `relationship-app`, `arra`, and
+`arra-videos` were deleted from their working trees. These deletions remain
+uncommitted. No other status entry or staged diff changed in those repositories.
+
+The old `~/.agents/pstack-models.md` file was deleted. The global Codex
+instructions now point to `~/.agents/p3-models.md`. They retain the Codex CLI
+notes for supported spawn arguments and available agent slots.
