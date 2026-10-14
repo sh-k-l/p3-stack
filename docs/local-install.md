@@ -32,3 +32,26 @@ The global model file is the default. Project role lines can override it.
 Setup resolves option IDs from the catalog and pings each distinct entry.
 Only a completed reply proves access. Add project overrides to `.prettierignore`
 to prevent changes to provider IDs.
+
+## 6. Skill name collisions
+
+The 2026-10-14 transcript scan covered 835 JSONL files. It counted direct
+slash commands, Claude command tags, and Skill tool calls. It excluded
+mere mentions, code blocks, duplicate message IDs, and inherited messages.
+
+`code-review` had two Skill calls and stays in place. These skills had zero
+invocations and moved to `~/.agents/skills-archive/` without deletion.
+
+- `tdd`
+- `teach`
+- `prototype`
+- `diagnose`
+- `handoff`
+- `to-prd`
+- `to-spec`
+- `to-tickets`
+
+`diagnosing-bugs` had zero invocations and was already absent.
+No skill needed an `mp-` name. The fork supplies p3's `tdd` and `teach`.
+The skill lock file stays unchanged. It still names Matt's versions, so a
+future `npx skills update` can restore the old copies and name collisions.
