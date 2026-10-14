@@ -4,6 +4,8 @@ description: "Spawn N parallel candidates at the same task, pick a base, graft t
 disable-model-invocation: true
 ---
 
+
+Read `~/.agents/p3-models.md` first. A project `p3-models.md` is an optional override. Each project role line replaces the same global role. Other roles keep their global values. Resolve effort through the catalog option ID, such as `reasoningEffort`, `effort`, or `variant`. Omit effort when the model exposes no such option.
 # Arena
 
 Fan out N parallel attempts at the same task. Read every candidate end to end. Pick the strongest as the base. Graft the best ideas from the others into it. Verify the synthesized result.

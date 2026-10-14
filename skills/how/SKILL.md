@@ -4,6 +4,8 @@ description: "Use for \"how does X work\", code walkthroughs before changing som
 disable-model-invocation: true
 ---
 
+
+Read `~/.agents/p3-models.md` first. A project `p3-models.md` is an optional override. Each project role line replaces the same global role. Other roles keep their global values. Resolve effort through the catalog option ID, such as `reasoningEffort`, `effort`, or `variant`. Omit effort when the model exposes no such option.
 # How
 
 Explore the codebase to answer "how does X work?" questions. Produce architectural explanations at the level of a senior engineer onboarding onto a subsystem, enough to build a working mental model, not so much that it reads like annotated source code.

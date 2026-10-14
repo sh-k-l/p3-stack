@@ -4,6 +4,8 @@ description: Delegate three parallel reviewers over the active thread, surface l
 disable-model-invocation: true
 ---
 
+
+Read `~/.agents/p3-models.md` first. A project `p3-models.md` is an optional override. Each project role line replaces the same global role. Other roles keep their global values. Resolve effort through the catalog option ID, such as `reasoningEffort`, `effort`, or `variant`. Omit effort when the model exposes no such option.
 # Reflect
 
 Mine the current conversation for durable learnings, then route them into skill edits.

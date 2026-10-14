@@ -4,6 +4,8 @@ description: "Use for 'why does X work this way', 'why we picked Y', design rati
 disable-model-invocation: true
 ---
 
+
+Read `~/.agents/p3-models.md` first. A project `p3-models.md` is an optional override. Each project role line replaces the same global role. Other roles keep their global values. Resolve effort through the catalog option ID, such as `reasoningEffort`, `effort`, or `variant`. Omit effort when the model exposes no such option.
 # Why
 
 Investigate the motivation and intent behind code.

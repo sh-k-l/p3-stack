@@ -23,7 +23,7 @@ cd p3-stack
 
 ## Get started
 
-1. Run `/setup-p3`. It reads `orchestrator_capabilities` and writes `p3-models.md`, mapping each role (code, judgment, the review panels) to a provider and model you actually have.
+1. Run `/setup-p3`. It reads the model catalog and pings every distinct entry before writing `~/.agents/p3-models.md`. A project file is an optional override. Add a project override to `.prettierignore`.
 2. Use `/p3-mode` whenever you want rigorous work. It reads the request, picks a playbook, and runs the other skills as the steps need them.
 3. Stuck or unsure which skill fits? Ask `/p3-help`.
 

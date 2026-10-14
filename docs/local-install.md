@@ -25,3 +25,10 @@ exact request or approval. The always-pause list still applies.
 Use ASD-STE100 Simplified Technical English for replies and prose artifacts.
 Keep the mode's reply rules and evidence labels. Name relevant principles only
 in the final summary of a non-trivial task.
+
+## 5. Model setup
+
+The global model file is the default. Project role lines can override it.
+Setup resolves option IDs from the catalog and pings each distinct entry.
+Only a completed reply proves access. Add project overrides to `.prettierignore`
+to prevent changes to provider IDs.
