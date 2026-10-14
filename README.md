@@ -19,7 +19,7 @@ cd p3-stack
 ./install.sh
 ```
 
-`install.sh` links every `skills/*` directory into `~/.agents/skills/`, where T3 Code reads skills. Use `./install.sh --project /path/to/repo` to install into a project's `.agents/skills/` instead.
+`install.sh` links every `skills/*` directory into `~/.agents/skills/`, where T3 Code reads skills. It also links `agents/`, `README.md`, and `LICENSE` into `~/.agents/`. Existing copies stay in place until you move them. Use `./install.sh --project /path/to/repo` to install into a project's `.agents/skills/` instead.
 
 ## Get started
 

@@ -31,3 +31,15 @@ if [[ "$skipped" -gt 0 ]]; then
   printf ' (%d skipped)' "$skipped"
 fi
 printf '\n'
+
+BASE="$(dirname "$TARGET")"
+for item in agents README.md LICENSE; do
+  if [[ -L "$BASE/$item" ]]; then
+    rm "$BASE/$item"
+  elif [[ -e "$BASE/$item" ]]; then
+    printf 'skip %s (exists and is not a symlink)\n' "$item"
+    continue
+  fi
+  ln -s "$ROOT/$item" "$BASE/$item"
+  printf 'linked %s into %s\n' "$item" "$BASE"
+done

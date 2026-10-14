@@ -55,3 +55,13 @@ invocations and moved to `~/.agents/skills-archive/` without deletion.
 No skill needed an `mp-` name. The fork supplies p3's `tdd` and `teach`.
 The skill lock file stays unchanged. It still names Matt's versions, so a
 future `npx skills update` can restore the old copies and name collisions.
+
+## 7. Symlink installation
+
+The previous p3 copies and root assets moved to
+`~/.agents/backup-2026-10-14/`. The installer links the fork's skill directories
+and the `agents/`, `README.md`, and `LICENSE` assets. Agent briefs must be
+reachable because delegated tasks and the comment review use them.
+
+The installer passed two runs in a temporary project. It preserved an
+existing plain skill copy and an unrelated skill.
