@@ -87,7 +87,7 @@ Playbooks are step lists inside `/p3-mode`, not skills, so they aren't invoked b
 
 p3-stack has no planning skill. For work that spans phases or stacked PRs, asking `/p3-mode` for a plan runs the [Multi-phase plan playbook](../p3-mode/playbooks/multi-phase-plan.md), which writes the plan and doesn't implement it. For a design question, the Prototype playbook or `/architect` settles it in code first.
 
-Principles are one-rule skills that `/p3-mode` reads and cites in its replies. The user rarely invokes one. They steer with the names instead, as in "apply prove it works. show me the real output." Typing `/principle-<name>` still loads one on demand.
+Principles are one-rule skills that `/p3-mode` reads. It cites the principles that shaped decisions only in the final summary of a non-trivial task. The user rarely invokes one. They steer with the names instead, as in "apply prove it works. show me the real output." Typing `/principle-<name>` still loads one on demand.
 
 ## Fix a run that went wrong
 

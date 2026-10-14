@@ -33,7 +33,7 @@ Survey recent threads within that scope for recurring patterns. Run multiple par
 - Response preferences (length, tone, format, "dumb it down" corrections)
 - Delegation habits (subagents, models, specialized workflows, parallelism)
 - Verification posture (what "done" means, unit tests vs live repro, reviewers)
-- Code and prose discipline (style, principles cited, lint/format tools)
+- Code and prose discipline (ASD-STE100 style, final-summary principle citations, lint and format tools)
 - Process conventions (worktrees, commits, PRs, review/merge tooling)
 - Meta preferences (fixing skills mid-task, proposing new ones)
 
@@ -55,7 +55,7 @@ Group the combined signals into sections. Common ones (use only what applies):
 - **Autonomy**: how much to do without asking, MCP tool use.
 - **Understand first**: which skills to reach for when scoping or investigating a change.
 - **Subagents**: default, parallelism, model-to-task, specialized workflows.
-- **Prose / code discipline**: principles, lint tools, style guides.
+- **Prose / code discipline**: principles, lint tools, and ASD-STE100 Simplified Technical English.
 - **Review and verify**: repro posture, verification skills, live-testing tools.
 - **Process**: git worktrees, commits, PRs, review/merge tooling.
 - **Skills**: skill-authoring habits, fix-the-skill-first, proposing new skills.

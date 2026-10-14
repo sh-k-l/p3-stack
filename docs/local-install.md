@@ -19,3 +19,9 @@ audit, and verification steps. Larger programs use `figure-it-out`.
 
 Local, reversible work proceeds without a question. Publication requires an
 exact request or approval. The always-pause list still applies.
+
+## 4. Reply style
+
+Use ASD-STE100 Simplified Technical English for replies and prose artifacts.
+Keep the mode's reply rules and evidence labels. Name relevant principles only
+in the final summary of a non-trivial task.

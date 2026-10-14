@@ -8,6 +8,8 @@ disable-model-invocation: true
 
 Edit text to remove AI patterns.
 
+Use ASD-STE100 Simplified Technical English for every reply and prose artifact. Use short sentences with one idea per sentence. Use plain words, active voice, and sentence-case headings. Keep technical names, paths, and commands exact. Do not use em dashes or filler. This is the single writing style. Document structure does not change the style.
+
 ## Process
 
 1. Scan for the patterns below.

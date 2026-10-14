@@ -2,7 +2,7 @@
 
 p3-stack adapts [pstack](https://github.com/cursor/plugins/tree/main/pstack) by poteto for T3 Code. Same skills, same language, rewired to T3's native orchestration.
 
-A skill reads as if it were written for T3 Code first. Keep pstack's sentences verbatim wherever they still apply. Replace every Cursor mechanism with the T3 Code equivalent below.
+A skill reads as if it were written for T3 Code first. Keep pstack's instructions where they still apply. Use the writing rules below for new or changed prose. Replace every Cursor mechanism with the T3 Code equivalent below.
 
 ## Delegated workers
 
@@ -43,7 +43,7 @@ Keep these names exactly.
 ## Writing rules
 
 - Thin over complete. Keep the shortest file that still changes behavior. Cut Cursor-only edge-case protocol and forge-specific branches before cutting any rule.
-- pstack's voice: terse, declarative, lowercase-friendly, no filler.
+- Use ASD-STE100 Simplified Technical English for every reply and prose artifact. Use short sentences with one idea per sentence. Use plain words, active voice, and sentence-case headings. Keep technical names, paths, and commands exact. Do not use em dashes or filler. This is the single writing style. Document structure does not change the style.
 - Frontmatter: `name`, one-line `description`, `disable-model-invocation: true` where the source has it. Drop Cursor UI fields (`icon`, `color`, `mode`, `reminder`).
 - Use T3 tool names exactly: `delegate_task`, `task_status`, `watch_pull_request`, `link_pull_request`, `schedule_task`, `t3_thread_launch`, `t3_thread_read`, `t3_thread_search`, `preview_*`, `device_*`.
 - Delegation briefs are self-contained. T3 child agents get only the brief, never the parent's context. Say this where pstack says "every brief stands alone".

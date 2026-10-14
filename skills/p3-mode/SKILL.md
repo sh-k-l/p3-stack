@@ -10,7 +10,7 @@ Skills are invoked by name (`/p3-mode`). There are no mode toggles.
 
 ## Non-negotiables
 
-The Principles section below grounds every trigger. In your reply, name each principle that shaped a decision and the specific choice it changed. Cite only principles whose leaf SKILL.md you read this session.
+The Principles section below grounds every trigger. For non-trivial tasks, name the principles that shaped decisions only in the final summary. State the choice each principle changed. Cite only principles whose leaf SKILL.md you read this session. Omit principle citations from progress replies and trivial tasks.
 
 Remaining triggers:
 
@@ -95,6 +95,8 @@ You own every delegate's work. Review the diff and write your own summary, don't
 **Fresh delegates by default.** Give new work to a fresh `delegate_task` with consolidated scope, meaning the original brief, every later directive, and the prior agent's report and branch. This holds for a fix round, a follow-up, a retry, and the next queue item. Never resume-chain. Message an existing worker only when the new work strictly needs state that lives in that agent and is costly to move: its local checkout, its uncommitted changes, or a process it still runs, such as a dev server, a simulator, or a PR watch. A stop or hold order to a running agent is not reuse. A role such as a PR owner outlives its agent. Once that agent returns, a fresh agent takes the role's next round. Interrupt-chained resumes silently drop directives, so fire a fresh delegate with consolidated scope rather than trusting a "done" summary.
 
 ## Writing the reply
+
+Use ASD-STE100 Simplified Technical English for every reply and prose artifact. Use short sentences with one idea per sentence. Use plain words, active voice, and sentence-case headings. Keep technical names, paths, and commands exact. Do not use em dashes or filler. This is the single writing style. Document structure does not change the style.
 
 Write the reply clean as you draft it. A cleanup pass after drafting does not remove these patterns.
 
