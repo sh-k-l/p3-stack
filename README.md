@@ -29,11 +29,11 @@ cd p3-stack
 
 ## The mode
 
-`p3-mode` routes every task. Its playbooks: investigation, bug fix, perf issue, hillclimb, runtime forensics, trace forensics, feature, refactoring, prototype, visual parity, authoring a skill, eval, babysit, shipping, autonomous run, orchestrate, autopilot-full, autopilot-stack, session pickup, pause safely, multi-phase plan, worktree cleanup, opening a PR.
+`p3-mode` routes every task. Its playbooks: investigation, bug fix, perf issue, feature, refactoring, prototype, authoring a skill, eval, babysit, shipping, autonomous run, autopilot-stack, session pickup, pause safely, multi-phase plan, worktree cleanup, opening a PR.
 
 ## Skills
 
-architect, arena, automate-me, benchmark-checklist, blast-radius, bro, correct, create-verification-skill, figure-it-out, how, interrogate, maintain-verification-skill, make-bot-ui, no-comments, p3-help, recall, reflect, setup-p3, show-me-your-work, swarm, tdd, teach, technical-writing, typescript-best-practices, unslop, why.
+architect, arena, automate-me, blast-radius, bro, correct, create-verification-skill, figure-it-out, how, interrogate, maintain-verification-skill, no-comments, p3-help, recall, reflect, setup-p3, show-me-your-work, swarm, tdd, teach, technical-writing, typescript-best-practices, unslop, why.
 
 ## Principles
 

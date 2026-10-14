@@ -57,14 +57,13 @@ The default answer is `/p3-mode`, which runs most of the others when its steps n
 | Hear the last reply again in plain words | [`/bro`](../bro/SKILL.md) |
 | Give agents a scripted way to drive the app and prove behavior | [`/create-verification-skill`](../create-verification-skill/SKILL.md) |
 | Bring a verification skill and its feature map back in line with the app | [`/maintain-verification-skill`](../maintain-verification-skill/SKILL.md) |
-| Vet a performance number before reporting or acting on it | [`/benchmark-checklist`](../benchmark-checklist/SKILL.md) |
+| Vet a performance number before reporting or acting on it | [Perf issue checklist](../p3-mode/playbooks/perf-issue.md#measurement-checklist) |
 | Run a large or cross-cutting change, or one to review after stepping away | [`/figure-it-out`](../figure-it-out/SKILL.md) |
 | Keep a decision log during a run, and review it afterward | [`/show-me-your-work`](../show-me-your-work/SKILL.md) |
 | Pick a model for each role and a reasoning budget | [`/setup-p3`](../setup-p3/SKILL.md) |
 | Turn their own working habits into a personal mode skill | [`/automate-me`](../automate-me/SKILL.md) |
 | Turn what a finished task taught into skill edits | [`/reflect`](../reflect/SKILL.md) |
 | Stop agents from repeating the same mistakes in this repo | [`/correct`](../correct/SKILL.md) |
-| Build a page whose buttons wake a bot over a webhook | [`/make-bot-ui`](../make-bot-ui/SKILL.md) |
 | Find their way around p3-stack | `/p3-help` |
 
 If a skill directory next to this one is missing from the table, read its frontmatter and route by its description. The `principle-*` directories are covered under principles below.
@@ -76,9 +75,7 @@ Close calls:
 - `/architect` implements right after it settles the design. Add "with checkpoint" to review the design before it writes code.
 - `/interrogate` reviews the diff. `/blast-radius` looks for breakage outside the diff and proves the one fact that makes the change safe.
 - `/recall` rebuilds context across recent threads. Resuming one specific thread, delegated task, or branch is the Session pickup playbook.
-- `/figure-it-out` designs one rigorous run. The Orchestrate playbook runs a program that spans days and many PRs. The Autonomous run playbook drives one task to a finish condition.
-
-**Not in p3-stack:** p3-stack has no `/orchestrate` skill. Orchestrate is a `/p3-mode` playbook.
+- `/figure-it-out` designs one rigorous run. The Autonomous run playbook drives one task to a finish condition.
 
 ## Playbooks and principles
 
@@ -86,7 +83,7 @@ Playbooks are step lists inside `/p3-mode`, not skills, so they aren't invoked b
 
 - "babysit this pr" or "check on pr 123" runs Babysit. It drives the PR to merge-ready and stops there. It doesn't merge unless the user asks to merge, land, or ship.
 - "land the stack" runs Shipping. "take over this branch" runs Session pickup. "pause safely" runs Pause safely. "run the eval playbook" runs Eval.
-- "full autopilot on this queue" runs Autopilot-full. "stack them, don't ship" runs Autopilot-stack.
+- "stack them, don't ship" runs Autopilot-stack.
 
 p3-stack has no planning skill. For work that spans phases or stacked PRs, asking `/p3-mode` for a plan runs the [Multi-phase plan playbook](../p3-mode/playbooks/multi-phase-plan.md), which writes the plan and doesn't implement it. For a design question, the Prototype playbook or `/architect` settles it in code first.
 

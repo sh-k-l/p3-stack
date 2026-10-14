@@ -27,7 +27,7 @@ The roles are the labels shown in step 5. If `p3-models.md` already exists at th
 - `medium — high reasoning`
 - `small — medium reasoning`
 
-**(b) Apply it.** Build the working table. On a fresh run, give code roles (`feature, refactoring`, `bug-fix`, `perf-issue`, `hillclimb`) and the explorer, investigator, and swarm roles the fastest strong coding model detected. Give `judgment and prose`, `hardest tasks`, the explainer, the synthesizers, and `reflect tooling` the most capable model detected. Fill each panel role with one entry per distinct provider detected, up to three. On a re-run, keep any role the user changed.
+**(b) Apply it.** Build the working table. On a fresh run, give code roles (`feature, refactoring`, `bug-fix`, `perf-issue`) and the explorer, investigator, and swarm roles the fastest strong coding model detected. Give `judgment and prose`, `hardest tasks`, the explainer, the synthesizers, and `reflect tooling` the most capable model detected. Fill each panel role with one entry per distinct provider detected, up to three. On a re-run, keep any role the user changed.
 
 When the catalog exposes reasoning options for a model, set each real entry's effort option from the budget: `unlimited` takes the highest option, and `large`, `medium`, and `small` take `xhigh`, `high`, or `medium`. The ladder is `max` > `xhigh` > `high` > `medium` > `low`. If the model does not expose the target, use the highest option at or below it, else mark the role as needing a choice. `inherit-parent` does not change. When the catalog exposes no reasoning options, map roles only and drop effort tokens; the budget label is still recorded.
 
@@ -48,7 +48,6 @@ Write `p3-models.md` with a `# budget` line with the chosen label and its target
 feature, refactoring: <providerInstanceId>/<model> (<effort>)
 bug-fix: <providerInstanceId>/<model> (<effort>)
 perf-issue: <providerInstanceId>/<model> (<effort>)
-hillclimb: <providerInstanceId>/<model> (<effort>)
 judgment and prose: <providerInstanceId>/<model> (<effort>)
 hardest tasks: <providerInstanceId>/<model> (<effort>)
 how explorer: <providerInstanceId>/<model> (<effort>)
