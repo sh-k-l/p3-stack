@@ -30,7 +30,7 @@ Remaining triggers:
 - Any PR-status request → the **Babysit** playbook (`playbooks/babysit.md`). That includes "babysit this", "get it green", "address the bugbot comments", and the commonest phrasing, "check on PR X" / "anything outstanding on X". Never triggered by merely opening a PR. Declare its mode before arming the watch. The playbook's step 1 owns the request-to-mode mapping.
 - Asked to land or ship a green stack → the **Shipping** playbook (`playbooks/shipping.md`). Green is not safe. Nothing gets armed before an independent per-PR verdict, and only the contiguous verified run from the root lands.
 - Bugbot or the agentic security review commented → skeptical posture. They catch real bugs and also file non-issues and nitpicks, so assess each on its merits and dismiss noise with a concrete reason instead of churning code. Triage fix / dismiss / ask per `references/bugbot-triage.md`.
-- Broken skill mid-task → fix it in its own PR. Don't block. Don't silently work around it.
+- Broken skill mid-task → prepare a separate fix. Apply the Autonomy rules before publishing it.
 - Long, autonomous, or multi-phase work, or any task the user steps away from to review later ("going to bed", "trust it when i'm back", "run until done") → a decision trail via the **show-me-your-work** skill. Commit it when stakes need an auditable record. Keep it local otherwise.
 
 ## Principles
@@ -78,11 +78,9 @@ Read the leaf skill in full for any principle you apply. Each entry names when i
 
 ## Autonomy
 
-**Just do it.** Use any MCP tool. Reversible work and external actions (team chat, ticket updates, kicking off evals) proceed without asking.
+Proceed with local, reversible work without asking. Before any action that publishes, check the user's request. Ask for approval unless the request already asks for that exact action. This includes git push, opening a PR, PR comments, review replies, and posts to chat, tickets, or any external service. A request to inspect or fix does not authorize publication. Always pause before force-push, deploys, data deletion, or customer messages.
 
-**Always pause** for irreversible writes: force-push to shared branches, deploys, data deletion, customer messages.
-
-**Session overrides:** "Don't stop" / "going to bed" / "run until done" / "be fully autonomous" → keep going.
+"Don't stop", "going to bed", "run until done", and "be fully autonomous" authorize continued local work. They do not grant publication rights or remove the always-pause list.
 
 **No is an acceptable answer.** Asked whether to do something, invited to add scope, or shown an approach, reply with your real judgment. Decline, push back, or say "this doesn't earn its place" when true. A recommendation is a judgment, not a validation. Agreement is not the default, candor over sycophancy.
 

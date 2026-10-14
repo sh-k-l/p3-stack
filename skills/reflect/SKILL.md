@@ -46,7 +46,7 @@ Sanity-check the synthesizer's Accepted list. For any item that would be enforce
 
 Before applying any Accepted edit, present the synthesizer's full Accepted/Rejected/Backlog output to the user and wait for explicit approval. The user picks which subset to apply and may redirect routings. Skill changes affect every future agent in the org. Do not auto-apply.
 
-Backlog items file to whatever devex / backlog tracker your team uses automatically. Only the Accepted list waits for approval.
+Keep Backlog items local. File them to the team's tracker only when the user requested that exact action or approves it.
 
 For each approved Accepted item, follow the Routing field exactly:
 
@@ -63,5 +63,5 @@ Short list, no preamble:
 
 - Edits applied: `<skill path>`. What changed, one line each.
 - New skills created: `<skill path>`. One line each (rare).
-- Backlog filed to the devex tracker: `<issue title>` (`<tags>`). One line each.
+- Backlog kept local or filed with approval: `<issue title>` (`<tags>`). One line each.
 - Dropped: one line per rejected finding + reason from the synthesizer.

@@ -14,3 +14,8 @@ The installed `tdd` and `teach` copies belong to Matt Pocock.
 Use the playbooks in the mode router. The performance measurement checklist
 lives in the Perf issue playbook. The stack workflow contains its own owner,
 audit, and verification steps. Larger programs use `figure-it-out`.
+
+## 3. Publication approval
+
+Local, reversible work proceeds without a question. Publication requires an
+exact request or approval. The always-pause list still applies.

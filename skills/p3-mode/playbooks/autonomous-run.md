@@ -1,5 +1,7 @@
 ### Autonomous run
 
+Proceed with local, reversible work without asking. Before any action that publishes, check the user's request. Ask for approval unless the request already asks for that exact action. This includes git push, opening a PR, PR comments, review replies, and posts to chat, tickets, or any external service. A request to inspect or fix does not authorize publication. Always pause before force-push, deploys, data deletion, or customer messages.
+
 **You own the exit condition. Define done, then drive to it without stopping.**
 
 1. State the exit condition as a checkable predicate before the first iteration (tests green, repro fixed, all N PRs merged, pixel-diff zero).

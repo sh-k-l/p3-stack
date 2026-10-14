@@ -1,5 +1,7 @@
 ### Multi-phase or multi-PR plan
 
+Proceed with local, reversible work without asking. Before any action that publishes, check the user's request. Ask for approval unless the request already asks for that exact action. This includes git push, opening a PR, PR comments, review replies, and posts to chat, tickets, or any external service. A request to inspect or fix does not authorize publication. Always pause before force-push, deploys, data deletion, or customer messages.
+
 **You own the plan, not the code. The plan is a checklist an owner runs box by box and the operator audits from the evidence.** The plan is the deliverable. Do not implement.
 
 1. When the change is one or two files with an obvious approach, skip the plan. Say so and stop.

@@ -1,6 +1,10 @@
 ### Opening a PR
 
-Invoked at the end of every other playbook.
+Use at the end of a playbook to prepare a reviewable change.
+
+Proceed with local, reversible work without asking. Before any action that publishes, check the user's request. Ask for approval unless the request already asks for that exact action. This includes git push, opening a PR, PR comments, review replies, and posts to chat, tickets, or any external service. A request to inspect or fix does not authorize publication. Always pause before force-push, deploys, data deletion, or customer messages.
+
+Complete the local edits and checks before asking. Show the proposed branch, PR title, and PR body. An instruction to open a PR authorizes the normal push needed to create it. It does not authorize force-push or later comments.
 
 **Worktree.** Work from a git worktree off main. Delegated workers inherit it. Parallel workers on the same branch each get their own worktree with `t3_thread_launch` and a `workspaceStrategy`, one writer per worktree, or `git fetch && git reset --hard origin/<branch>` between them. Dirty branch with unrelated work: patch out, fresh worktree, apply. Snarled worktree: reset from main, redo minimally.
 

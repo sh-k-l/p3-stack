@@ -26,7 +26,11 @@ If you are a delegated worker, your brief names exactly one file. Write only tha
 | `poteto-mode`, `poteto-agent`, `poteto-help`, `setup-pstack` | `p3-mode`, `agents/p3-agent.md`, `p3-help`, `setup-p3`. |
 | Cursor custom modes ("press option+enter") | Skills are invoked by name (`/p3-mode`). No mode toggles. |
 
-Everything else in pstack transfers as written: the principles, the playbook shapes, the brief template, the reply style, the autonomy rules. Adopt it.
+Use the principles, playbooks, and brief format from this fork. The local rules below replace upstream autonomy rules.
+
+## Publication approval
+
+Proceed with local, reversible work without asking. Before any action that publishes, check the user's request. Ask for approval unless the request already asks for that exact action. This includes git push, opening a PR, PR comments, review replies, and posts to chat, tickets, or any external service. A request to inspect or fix does not authorize publication. Always pause before force-push, deploys, data deletion, or customer messages.
 
 ## Role names
 
