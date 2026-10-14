@@ -65,3 +65,11 @@ reachable because delegated tasks and the comment review use them.
 
 The installer passed two runs in a temporary project. It preserved an
 existing plain skill copy and an unrelated skill.
+
+## 8. Global model file
+
+The approved model values are in [local-models.md](local-models.md).
+The active file is `~/.agents/p3-models.md`. All four distinct entries replied
+with `pong`. Codex uses `reasoningEffort`, Claude uses `effort`, and DeepSeek
+uses `variant`, all at `high`. MiMo has no effort option and omits it.
+The Gemini seat waits for the user's OpenCode privacy approval.
